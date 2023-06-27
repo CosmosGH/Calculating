@@ -1,0 +1,19 @@
+# МЕТОД 1
+import datetime
+start = datetime.datetime.now()
+"""
+CODE
+"""
+print(datetime.datetime.now()-start)
+# МЕТОД 2
+import time
+start_time = time.time()
+main()
+print(f"Total Time To Execute The Code is {(time.time() - start_time)}" )
+# МЕТОД 3
+import timeit
+code = '''
+## Фрагмент кода, чье время выполнения подлежит измерению
+[2,6,3,6,7,1,5,72,1].sort()
+'''
+print(timeit.timeit(stmy = code,number = 1000))
